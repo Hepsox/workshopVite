@@ -1,7 +1,60 @@
-.true-class {
-  background-color: green;
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+.card-nav {
+  margin: 0 auto;
+  background-color: rgb(40, 40, 51);
+  width: 300px;
+
+  padding: 50px;
+  box-shadow: -3px 5px 42px -9px rgba(120, 120, 120, 0.77);
+  -webkit-box-shadow: -3px 5px 42px -9px rgba(120, 120, 120, 0.77);
+  -moz-box-shadow: -3px 5px 42px -9px rgba(120, 120, 120, 0.77);
+  border-radius: 5px;
+}
+.card-nav h1 {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+button {
+  padding: 7px 20px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 15px;
+
+  transition: transform 0.5s;
 }
 
-.false-class {
-  background-color: red;
+button:hover {
+  transform: scale(0.95);
+}
+
+.precedent {
+  background-color: rgb(40, 40, 51);
+  border: 1px white solid;
+  box-shadow: 1px 1px 1px;
+}
+
+.suivant {
+  background-color: blueviolet;
+  margin-left: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: blueviolet;
+  margin: 0 auto;
+}
+
+.fa-heart {
+  color: red;
 }

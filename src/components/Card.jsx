@@ -1,20 +1,25 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-const Card = ({ photoProfil, nom, descriptionPersonne }) => {
-  const [statu, setStatu] = useState(false);
-  console.log(statu);
-
+const Card = ({
+  imgProfil,
+  nomProfil,
+  descriptionProfil,
+  status,
+  setStatus,
+}) => {
   return (
-    <div>
-      <img src={photoProfil} />
-      <h1> {nom}</h1>
-      <p>{descriptionPersonne} </p>
-      <button
+    <div className="card">
+      <img src={imgProfil} />
+      <h1>{nomProfil}</h1>
+      <div className="texte">
+        <p>{descriptionProfil}</p>
+      </div>
+      <i
         onClick={() => {
-          setStatu(!statu);
+          setStatus(!status);
         }}
-        className={statu == true ? "true-class" : "false-class"}
-      ></button>
+        className={status == true ? "fa-solid fa-heart" : "fa-regular fa-heart"}
+      ></i>
     </div>
   );
 };
